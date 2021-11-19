@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xl="http://www.w3.org/1999/xlink" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="459 439 339 459" width="339" height="459">
+  <defs>
+    <font-face font-family="Helvetica Neue" font-size="16" panose-1="2 0 5 3 0 0 0 2 0 4" units-per-em="1000" underline-position="-100" underline-thickness="50" slope="0" x-height="517" cap-height="714" ascent="951.9958" descent="-212.99744" font-weight="400">
+      <font-face-src>
+        <font-face-name name="HelveticaNeue"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.19.2\n2021-11-18 18:34:53 +0000</metadata>
+  <g id="room_display" stroke-opacity="1" fill-opacity="1" stroke="none" stroke-dasharray="none" fill="none">
+    <title>room display</title>
+    <rect fill="white" x="459" y="439" width="339" height="459"/>
+    <g id="room_display_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_2">
+        <rect x="460" y="440" width="337.5" height="457" fill="white"/>
+        <rect x="460" y="440" width="337.5" height="457" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_3">
+        <rect x="488.75" y="474" width="280" height="84" fill="white"/>
+        <rect x="488.75" y="474" width="280" height="84" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_4">
+        <rect x="503.25" y="484" width="201.75" height="26" fill="#f0f0f0"/>
+        <text transform="translate(508.25 487.776)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x="51.123" y="15">Living Room</tspan>
+        </text>
+      </g>
+      <g id="Graphic_5">
+        <rect x="503.25" y="521" width="251" height="26" fill="white"/>
+      </g>
+      <g id="Graphic_6">
+        <rect x="503.25" y="521" width="201.75" height="26" fill="#f0f0f0"/>
+        <text transform="translate(508.25 524.776)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x="72.307" y="15">22,5 C</tspan>
+        </text>
+      </g>
+      <g id="Graphic_7">
+        <circle cx="530" cy="635" r="11.0000175769208" fill="white"/>
+        <circle cx="530" cy="635" r="11.0000175769208" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(526.2 625.776)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x=".68799995" y="15">-</tspan>
+        </text>
+      </g>
+      <g id="Graphic_8">
+        <circle cx="530" cy="600" r="11.0000175769208" fill="white"/>
+        <circle cx="530" cy="600" r="11.0000175769208" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(526.2 590.776)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x="0" y="15">+</tspan>
+        </text>
+      </g>
+      <g id="Graphic_9">
+        <text transform="translate(562 590.776)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x="0" y="15">Increase</tspan>
+        </text>
+      </g>
+      <g id="Graphic_12">
+        <text transform="translate(562 625.776)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x="0" y="15">Decrease</tspan>
+        </text>
+      </g>
+      <g id="Graphic_14">
+        <rect x="676.986" y="521" width="77.264" height="26" fill="#f0f0f0"/>
+        <text transform="translate(681.986 524.776)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x="16.744" y="15">Heat</tspan>
+        </text>
+      </g>
+      <g id="Graphic_15">
+        <rect x="700" y="484" width="54.25" height="26" fill="#f0f0f0"/>
+      </g>
+      <g id="Graphic_17">
+        <circle cx="530" cy="670" r="11.0000175769208" fill="white"/>
+        <circle cx="530" cy="670" r="11.0000175769208" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_18">
+        <text transform="translate(562 660.776)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x="0" y="15">Heater Loop</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>
