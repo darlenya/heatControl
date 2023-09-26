@@ -1,0 +1,101 @@
+esphome:
+  name: heizverteiler-haupteingang
+
+esp32:
+  board: esp32dev
+  framework:
+    type: arduino
+
+# Enable logging
+logger:
+
+# Enable Home Assistant API
+api:
+  encryption:
+    key: "4hvh4dTD1cHSr0faN5ze2lCv6HeFyinnRecv5QRkJWQ="
+
+ota:
+  password: "b11ad0966e0f60ad7a5760dfee89be5f"
+
+wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_password
+
+  # Enable fallback hotspot (captive portal) in case wifi connection fails
+  ap:
+    ssid: "Heizverteiler-Haupteingang"
+    password: "rDeu2L3bNwWM"
+
+captive_portal:
+    
+# Example configuration entry
+dallas:
+  - pin: GPIO4
+  
+sensor:
+  - platform: dallas
+    address: 0x5f0621b46bdcf628
+    id: "r1"
+    name: "1 Sol Wohnzimmer 1"
+  - platform: dallas
+    address: 0x0b0621b50cef4928
+    id: "r2"
+    name: "2 Sol Wohnzimmer 2"
+  - platform: dallas
+    address: 0x100921b0caae7028
+    id: "r3"
+    name: "3 Sol Bad"
+  - platform: dallas
+    address: 0xf30621b49a797528
+    id: "r4"
+    name: "4 Randa Bad"
+  - platform: dallas
+    address: 0x0e0621b4f82bfc28
+    id: "r5"
+    name: "5 Sol Schlafzimmer"
+  - platform: dallas
+    address: 0xa90621b4ed5fed28
+    id: "r6"
+    name: "6 Randa Schlafzimmer"
+  - platform: dallas
+    address: 0xfb0621b48486c028
+    id: "v1"
+    name: "Vorlauf"  
+
+switch:
+  - platform: gpio
+    id: "Kreis_1"
+    name: "Sol Wohnzimmer 1"
+    pin: 
+      number: GPIO13
+      inverted: true  
+  - platform: gpio
+    id: "Kreis_2"
+    name: "Sol Wohnzimmer 2"
+    pin: 
+      number: GPIO16
+      inverted: true  
+  - platform: gpio
+    id: "Kreis_3"
+    name: "Sol Bad"
+    pin: 
+      number: GPIO33
+      inverted: true  
+  - platform: gpio
+    id: "Kreis_4"
+    name: "Randa Bad"
+    pin: 
+      number: GPIO25
+      inverted: true  
+  - platform: gpio
+    id: "Kreis_5"
+    name: "Sol Schlafzimmer"
+    pin: 
+      number: GPIO26
+      inverted: true  
+  - platform: gpio
+    id: "Kreis_6"
+    name: "Randa Schlafzimmer"
+    pin: 
+      number: GPIO27
+      inverted: true  

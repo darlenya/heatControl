@@ -1,0 +1,102 @@
+esphome:
+  name: heizverteiler-kueche
+
+esp32:
+  board: esp32dev
+  framework:
+    type: arduino
+
+# Enable logging
+logger:
+
+# Enable Home Assistant API
+api:
+  encryption:
+    key: "9OeBDwJI/bpprYbM1VzPO1fraV7ku1mhnjPI5fctggE="
+
+ota:
+  password: "151eb39166d539adc9bea56e5bb43a22"
+
+wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_password
+
+  # Enable fallback hotspot (captive portal) in case wifi connection fails
+  ap:
+    ssid: "Heizverteiler-Kueche"
+    password: "nMC3pZAZxnRX"
+
+captive_portal:
+    
+# Example configuration entry
+dallas:
+  - pin: GPIO4
+  
+
+sensor:
+  - platform: dallas
+    address: 0x6a0621b47f358028
+    id: "r1"
+    name: "1 Mare Schlafzimmer"
+  - platform: dallas
+    address: 0x610821b0b756c728
+    id: "r2"
+    name: "2 Mare Bad"
+  - platform: dallas
+    address: 0x0f0621b482d6f728
+    id: "r3"
+    name: "3 Mare Küche"
+  - platform: dallas
+    address: 0xd00621b483d63d28
+    id: "r4"
+    name: "4 Haupthaus Küche 1"
+  - platform: dallas
+    address: 0x610821b0b756c728
+    id: "r5"
+    name: "5 Haupthaus Küche 2"
+  - platform: dallas
+    address: 0x210621b4dd28c028
+    id: "r6"
+    name: "6 Haupthaus Esszimmer -> Küche"
+  - platform: dallas
+    address: 0xd30621b481a1c028
+    id: "v1"
+    name: "Vorlauf"  
+
+switch:
+  - platform: gpio
+    id: "Kreis_1"
+    name: "Mare Schlafzimmer"
+    pin: 
+      number: GPIO13
+      inverted: true  
+  - platform: gpio
+    id: "Kreis_2"
+    name: "Mare Bad"
+    pin: 
+      number: GPIO16
+      inverted: true  
+  - platform: gpio
+    id: "Kreis_3"
+    name: "Mare Küche"
+    pin: 
+      number: GPIO33
+      inverted: true  
+  - platform: gpio
+    id: "Kreis_4"
+    name: "Haupthaus Küche 1"
+    pin: 
+      number: GPIO25
+      inverted: true  
+  - platform: gpio
+    id: "Kreis_5"
+    name: "Haupthaus Küche 2"
+    pin: 
+      number: GPIO26
+      inverted: true  
+  - platform: gpio
+    id: "Kreis_6"
+    name: "Haupthaus Esszimmer -> Küche"
+    pin: 
+      number: GPIO27
+      inverted: true  

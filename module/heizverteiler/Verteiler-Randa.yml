@@ -1,0 +1,102 @@
+esphome:
+  name: heizverteiler-randa
+
+esp32:
+  board: esp32dev
+  framework:
+    type: arduino
+
+# Enable logging
+logger:
+  level: INFO
+
+# Enable Home Assistant API
+api:
+  encryption:
+    key: "tvCV/VKPhMKWKp95QXY3JV1WWnxnptJcVI3RMixxF9M="
+
+ota:
+  password: "6ec93ef085c0d409d323d67b01c34dbc"
+
+wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_password
+
+  # Enable fallback hotspot (captive portal) in case wifi connection fails
+  ap:
+    ssid: "Heizverteiler-Randa"
+    password: "0yfsqparf3n1"
+
+captive_portal:
+    
+# Example configuration entry
+dallas:
+  - pin: GPIO4
+
+sensor:
+  - platform: dallas
+    address: 0x820621b47c97ee28
+    id: "r1"
+    name: "1 Sol Wohnzimmer 1"
+  - platform: dallas
+    address: 0x020621b47feb9a28
+    id: "r2"
+    name: "2 Sol Wohnzimmer 1"
+  - platform: dallas
+    address: 0xf30621b4e62dc428
+    id: "r3"
+    name: "3 Sol Bad"
+  - platform: dallas
+    address: 0x730621b49a1ae728
+    id: "r4"
+    name: "4 Randa Bad" 
+  - platform: dallas
+    address: 0xe40621b47f520f28
+    id: "r5"
+    name: "5 Sol Schlafzimmer"
+  - platform: dallas
+    address: 0xfd0621b438a2a828
+    id: "r6"
+    name: "6 Randa Schlafzimmer"
+  - platform: dallas
+    address: 0xdc0621b4b03b2528
+    id: "v1"
+    name: "Vorlauf"
+
+switch:
+  - platform: gpio
+    id: "Kreis_1"
+    name: "Sol Wohnzimmer 1"
+    pin: 
+      number: GPIO13
+      inverted: true  
+  - platform: gpio
+    id: "Kreis_2"
+    name: "Sol Wohnzimmer 2"
+    pin: 
+      number: GPIO16
+      inverted: true  
+  - platform: gpio
+    id: "Kreis_3"
+    name: "Sol Bad"
+    pin: 
+      number: GPIO33
+      inverted: true  
+  - platform: gpio
+    id: "Kreis_4"
+    name: "Randa Bad"
+    pin: 
+      number: GPIO25
+      inverted: true  
+  - platform: gpio
+    id: "Kreis_5"
+    name: "Sol Schlafzimmer"
+    pin: 
+      number: GPIO26
+      inverted: true  
+  - platform: gpio
+    id: "Kreis_6"
+    name: "Randa Schlafzimmer"
+    pin: 
+      number: GPIO27
+      inverted: true  

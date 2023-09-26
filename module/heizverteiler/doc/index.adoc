@@ -1,0 +1,4 @@
+== Modul Heizverteiler
+Dieses Modul sitz in der Verteilung der Fußbodenheizung.
+Die Aufgabe ist es die Ventile der einzelnen Heizkreise zu öffnen und zu schließen
+und die Temparatur am Vorlauf und an jedem einzlenen Rücklauf zu messen.

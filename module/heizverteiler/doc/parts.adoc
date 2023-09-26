@@ -1,0 +1,5 @@
+== Benötigte Teile
+* 8 channel relay module
+* Esp32 Module
+* Bis zu neun Temparaturfühler
+* Spannungswandler modul 220 zu 5v
